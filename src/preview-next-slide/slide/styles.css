@@ -1,0 +1,42 @@
+
+.move {
+  height: 120px;
+}
+
+
+.move :hover {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes move {
+  from {
+    height: 120px;
+  }
+  to {
+    height: 10px;
+  }
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+   /* semi-transparent black overlay */
+  color: black;
+  
+  display: flex;
+
+  cursor: pointer;
+}
+
+.overlay-text {
+  font-size: 10px;
+  text-align: center;
+  margin-left: .25rem;
+}
